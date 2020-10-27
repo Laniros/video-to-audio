@@ -3,6 +3,8 @@ import youtube from './youtube'
 import SearchBar from './SearchBar'
 import VideoDetail from './VideoDetail'
 import VideoList from './VideoList'
+import Container from 'react-bootstrap/Container'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class Activity extends React.Component {
     state = {
@@ -25,18 +27,21 @@ class Activity extends React.Component {
 
     render() {
         return (
-            <div className='ui container' style={{marginTop: '1em'}}>
+            <Container style={{marginTop: 20}}>
+
                 <SearchBar handleFormSubmit={this.handleSubmit}/>
                 <div className='ui grid'>
                     <div className="ui row">
-                        <div className="col-8">
+                        
                         </div>
-                        <div className="col-5">
+                        <div >
                             <VideoList handleVideoSelect={this.handleVideoSelect} videos={this.state.videos}/>
-                        </div>
+                        
+                        
                     </div>
                 </div>
-            </div>
+        
+            </Container>
         )
     }
 }
