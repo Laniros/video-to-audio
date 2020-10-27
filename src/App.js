@@ -2,7 +2,7 @@ import './App.css';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Homepage from './Homepage'
+import Activity from './Activity'
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
       <Nav.Link href="#pricing">Pricing</Nav.Link>
     </Nav>
   </Navbar>
-  <Homepage/>
+  <Activity/>
     </div>
   );
 }
